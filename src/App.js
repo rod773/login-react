@@ -5,12 +5,14 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Preferences from "./components/Preferences/Preferences";
 import Login from "./components/Login/Login";
 
-function setToken(userToken) {}
+function setToken(userToken) {
+  sessionStorage.setItem("token", JSON.stringify(userToken));
+}
 
 function getToken() {}
 
 function App() {
-  const [token, setToken] = useState();
+  const token = getToken();
 
   if (!token) {
     return <Login setToken={setToken} />;
