@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./Login.css";
 
 async function loginUser(credentials) {
-  return fetch("https://infodemencias.com/wp-json/auth/v1/tokeb", {
+  return fetch("https://infodemencias.com/wp-json/auth/v1/token", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
