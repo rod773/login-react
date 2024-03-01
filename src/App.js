@@ -5,6 +5,10 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Preferences from "./components/Preferences/Preferences";
 import Login from "./components/Login/Login";
 
+function setToken(userToken) {}
+
+function getToken() {}
+
 function App() {
   const [token, setToken] = useState();
 
