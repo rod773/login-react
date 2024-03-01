@@ -1,9 +1,9 @@
 import "./App.css";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "../components/Dashboard/Dashboard";
-import Preferences from "../components/Preferences/Preferences";
-import Login from "../components/Login/Login";
+import Dashboard from "components/Dashboard/Dashboard";
+import Preferences from "components/Preferences/Preferences";
+import Login from "components/Login/Login";
 
 function setToken(userToken) {
   sessionStorage.setItem("token", JSON.stringify(userToken));
@@ -11,7 +11,7 @@ function setToken(userToken) {
 function getToken() {
   const tokenString = sessionStorage.getItem("token");
   const userToken = JSON.parse(tokenString);
-  return userToken?.toke;
+  return userToken?.token;
 }
 
 function App() {
